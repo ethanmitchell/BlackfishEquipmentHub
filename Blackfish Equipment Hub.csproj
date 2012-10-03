@@ -101,6 +101,11 @@
     <Content Include="GapLib\WP7CordovaClassLib.dll" />
     <Content Include="www\cordova-1.8.1.js" />
     <Content Include="www\images\exit.png" />
+    <Content Include="www\images\inventory.png" />
+    <Content Include="www\images\log.png" />
+    <Content Include="www\images\logo.png" />
+    <Content Include="www\images\settings.png" />
+    <Content Include="www\images\wireless.png" />
     <Content Include="www\index.html">
       <SubType>Designer</SubType>
     </Content>

@@ -48,7 +48,35 @@
 
         });
       </script>
+              <script type="text/javascript" charset="utf-8">
 
+                  //Functions called on startup
+                  //Get System Status Web Service
+                  x$.data = {};
+                  var urlstatus = 'http://test.blackfish.no/WebServices/mobileSync.asmx/GetSystemStatus';
+                  x$(window).load(function (e) {
+                      x$("#returned_information").xhr(urlstatus,
+                   { error: function () { alert(this.responseText); },
+                       callback: function () {
+                           var status = this.responseText;
+
+                           if (status) {
+                               //document.getElementById('returned_information').innerHTML = 'The System is online.';
+                               //$('#mycases').html('The System is online.');
+                               connected();
+                           } else {
+                               //document.getElementById('returned_information').innerHTML = 'The System is offline, ' + status + '.';
+                               $('#connected').html('The System is offline.');
+                           }
+                       }
+                   });
+
+               });
+
+               function connected() {
+                   $('#connected').html('<strong>available</strong> via <img src="images/wireless.png" alt="Wireless" />');
+               }
+            </script>
 
 
 
@@ -57,18 +85,18 @@
 <div id="container">
 <div class="innercontainer">
   <div id="header">
-        <h1>Header</h1>
+        <img class="logo" src="images/logo.png" alt="Blackfish Equipment Hub Logo" />
     </div>
     <div id="body">
-    <div class="fullwidth alignTextCenter"><a href="locations.html">Inventory</a></div>
-    <div class="one-half alignTextCenter"><a href="#">Settings</a></div>
-    <div class="one-half alignTextCenter"><a href="#">Log</a></div>
+    <div class="fullwidth alignTextCenter"><a href="locations.html"><img alt="Inventory" src="images/inventory.png" /></a><p class="label">Inventory</p></div>
+    <div class="one-half alignTextCenter"><a href="#"><img alt="Settings" src="images/settings.png" /></a><p class="label">Settings</p></div>
+    <div class="one-half alignTextCenter"><a href="#"><img alt="Log" src="images/log.png" /></a><p class="label">Log</p></div>
 
     </div>
-
   <!-- </div> -->
          <div id="footer">
-         Footer
+        <div class="connection">System Status: <div id="connected"><strong>Unavailable</strong></div><hr /><span class="smallfont">System last Synychronized on 18th Feburary 2011 10:14:42</span></div>
+        <div class="login-info"><p>Logged on as: demoUser | <a href="#">log out</a></p></div>
         </div>
   <!-- </div> -->
   </div>
