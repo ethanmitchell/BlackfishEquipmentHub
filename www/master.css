@@ -42,8 +42,8 @@ ul li
    
 }
 #body {
-   margin-left:7%;
-   margin-right:7%;
+   margin-left:5%;
+   margin-right:5%;
    padding-bottom:9%;   /* Height of the footer */
 }
 #footer 
@@ -51,7 +51,7 @@ ul li
 
    position:absolute;
    bottom:0;
-   margin-left:7%;
+   margin-left:0%;
    margin-bottom:5%;
    width:90%;
    height:9%;   /* Height of the footer */
