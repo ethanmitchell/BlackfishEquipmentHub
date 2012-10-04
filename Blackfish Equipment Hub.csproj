@@ -103,6 +103,7 @@
     <Content Include="www\images\exit.png" />
     <Content Include="www\images\header_bg.png" />
     <Content Include="www\images\inventory.png" />
+    <Content Include="www\images\inventoryList.png" />
     <Content Include="www\images\inventory_small.png" />
     <Content Include="www\images\locationsFolder.png" />
     <Content Include="www\images\log.png" />
@@ -113,6 +114,7 @@
       <SubType>Designer</SubType>
     </Content>
     <Content Include="www\inventory.html" />
+    <Resource Include="www\inventoryList.png" />
     <Content Include="www\javascript\jquery.js" />
     <Content Include="www\javascript\jquery.tabify.js" />
     <Content Include="www\javascript\jquery.tabify.source.js" />

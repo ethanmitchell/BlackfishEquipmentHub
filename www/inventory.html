@@ -42,6 +42,8 @@
           function onDeviceReady() {
           }
           $(document).ready(function () {
+              var myHeight = window.innerHeight / 1.8;
+              $('.inventory').css('height', myHeight + 'px');
           });
       </script>
 </head>
@@ -58,16 +60,19 @@
     <div id="body">
     <p class="alignRight label textAlignRight">Inventory<br /><span class="smallFont">HN-K03-09</span></p>
     <hr class="cleareBoth" />
-    <p class="smallFont inventoryLabel">Q <span class="inventoryLabel">#</span> <span class="inventoryLabel">Name</span></p>
+    <p class="smallFont inventoryLabel">Q <span class="itemNumberLabel">#</span> <span class="itemNameLabel">Name</span></p>
     <div class="fullwidth">
-    <div class='locations'><ul>
-    <li>HN-K03-01</li>
-    <li>HN-K03-04</li>
-    <li>HN-K03-07</li>
-    <li><a href="inventory.html">HN-K03-09</a></li>
-    <li>HN-K03-10</li>
-    <li>HN-K03-11</li>
-    </ul>
+    <div class='inventory'>
+    <table>
+    <tr><td><img class="middleAlign" src="images/inventoryList.png" alt="Invetory List" /></td><td class="itemQuantity">26</td><td class="itemNumber">7721122</td><td class="itemName">TRANBERG CONNECTION KIT M25, BRASS (RAYCHEM PART NO. C25-S-26)  UNIVERSAL FOR WALL MOUNTED J.B</td></tr>
+    <tr><td><img class="middleAlign" src="images/inventoryList.png" alt="Invetory List" /></td><td class="itemQuantity">10</td><td class="itemNumber">1038274</td><td class="itemName">E-06 ENDEAVSLUTNING  RAYCHEM</td></tr>
+    <tr><td><img class="middleAlign" src="images/inventoryList.png" alt="Invetory List" /></td><td class="itemQuantity">30</td><td class="itemNumber">1038377</td><td class="itemName">LAB-ESL-N RAYCHEM</td></tr>
+    <tr><td><img class="middleAlign" src="images/inventoryList.png" alt="Invetory List" /></td><td class="itemQuantity">20</td><td class="itemNumber">1038368</td><td class="itemName">RAYCHEM C-25-100 TILKOPLINGSSETT</td></tr>
+    <tr><td><img class="middleAlign" src="images/inventoryList.png" alt="Invetory List" /></td><td class="itemQuantity">80</td><td class="itemNumber">HL-60220</td><td class="itemName">HOLLAENDER ALU REKKVERK SYSTEM 60220 Base Socket</td></tr>
+    <tr><td><img class="middleAlign" src="images/inventoryList.png" alt="Invetory List" /></td><td class="itemQuantity">19</td><td class="itemNumber">HL-GA52E-8</td><td class="itemName">HOLLAENDER ALU REKKVERK SYSTEM HOLGA52E-8 Neoprene gasket</td></tr>
+    <tr><td><img class="middleAlign" src="images/inventoryList.png" alt="Invetory List" /></td><td class="itemQuantity">53</td><td class="itemNumber">1038112</td><td class="itemName">PSE-280-PIPE STRAP FOR 2 TO 10 (60-288MM)</td></tr>
+    <tr><td><img class="middleAlign" src="images/inventoryList.png" alt="Invetory List" /></td><td class="itemQuantity">112</td><td class="itemNumber">7210002</td><td class="itemName">CLADDING PROTECTOR STAINLESS STEEL TRANBERG</td></tr>
+     </table>
     </div>
     </div>
     </div>

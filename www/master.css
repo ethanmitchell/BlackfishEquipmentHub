@@ -29,6 +29,7 @@ ul li
 {
  padding:4px 0 4px 0;
  margin:0px;
+ overflow:hidden;
 }
   h1
   {
@@ -99,7 +100,7 @@ ul li
 {
     float:left;
 }
-.locations
+.locations, .inventory
 {
  padding:5px;
  overflow:scroll;   
@@ -164,9 +165,10 @@ display:inline;
 
 .inventoryLabel
 {
-   padding-left:10%;
+   padding-left:17.5%;
    padding-bottom:0px;
    margin-bottom:0px;
+   color:#0c406f;
 }
 .middleAlign
 {
@@ -200,4 +202,33 @@ display:inline;
     background-repeat:repeat-x;   
     background-position:bottom;
     height:70px;
+}
+.itemNumberLabel, .itemNameLabel
+{
+    font-weight:bold;
+    font-size:10px;
+    color:#0c406f;
+    padding-left:12%;
+}
+.itemQuantity, .itemNumber, .itemName
+{
+    font-weight:bold;
+    font-size:9px;
+    color:#0c406f;
+    white-space:nowrap;
+}
+.itemQuantity, .itemNumber
+{
+    text-align:center;
+}
+.itemNumber
+{
+ width:30%;   
+}
+.itemName
+{
+    white-space:nowrap;
+    overflow:scroll;
+    width:60%;
+    
 }
