@@ -4,10 +4,10 @@
 	id		= "com.blackfish.firstline"
 	version 	= "1.0.0">
 
-	<name>Blackfish Equipment Hub</name>
+	<name>Blackfish Surplus Portal</name>
 
 	<description>
-		A template for getting started with Blackfish Equipment Hub.
+		A template for getting started with Blackfish Surplus Portal.
 	</description>
 
 	<author href="http://www.firstline.no"

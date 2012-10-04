@@ -55,7 +55,7 @@ ul li
 
    position:absolute;
    bottom:0;
-   margin-left:0%;
+   margin-left:2.5%;
    margin-bottom:5%;
    width:95%;
    height:9%;   /* Height of the footer */
@@ -164,7 +164,7 @@ display:inline;
 
 .inventoryLabel
 {
-   padding-left:8%;
+   padding-left:10%;
    padding-bottom:0px;
    margin-bottom:0px;
 }

@@ -103,6 +103,7 @@
     <Content Include="www\images\exit.png" />
     <Content Include="www\images\header_bg.png" />
     <Content Include="www\images\inventory.png" />
+    <Content Include="www\images\inventory_small.png" />
     <Content Include="www\images\locationsFolder.png" />
     <Content Include="www\images\log.png" />
     <Content Include="www\images\logo.png" />
