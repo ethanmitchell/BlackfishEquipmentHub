@@ -234,7 +234,8 @@ display:inline;
 width:60%;
     
 }
-.itemNameFontSize
+.itemName a
 {
     font-size:9px;
+    color:#0c406f;
 }
