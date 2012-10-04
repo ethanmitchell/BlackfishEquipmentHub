@@ -9,6 +9,10 @@
     padding: 0px;
     height:100%;
   }
+  a
+  {
+      text-decoration:none;
+  }
 img
   {
    border:none;
@@ -23,14 +27,14 @@ ul
 }
 ul li
 {
- padding:2px 0 0 0;
+ padding:4px 0 4px 0;
  margin:0px;
 }
   h1
   {
      text-align:center;
      font-size:18px;
-     color:#FFC312; /* Mango me! */
+     color:#FFC312;
   }
 #container {
    min-height:100%;
@@ -42,8 +46,8 @@ ul li
    
 }
 #body {
-   margin-left:5%;
-   margin-right:5%;
+   margin-left:2.5%;
+   margin-right:2.5%;
    padding-bottom:9%;   /* Height of the footer */
 }
 #footer 
@@ -53,28 +57,32 @@ ul li
    bottom:0;
    margin-left:0%;
    margin-bottom:5%;
-   width:90%;
+   width:95%;
    height:9%;   /* Height of the footer */
    background:#fff;
    text-align:center;
    
 }
+
 .innercontainer
 {
-    width:90%;
+    width:100%;
     margin:0px auto 0px auto;
     height:100%;
  
 }
 .fullwidth
 {
-    width:100%;
+    width:95%;
+    margin:0px auto 0px auto;
     clear:both;
+    padding-bottom:20%;
 }
 .one-half
 {
     width:50%;
     float:left;   
+    padding-bottom:20%;
 }
 .last
 {
@@ -87,14 +95,18 @@ ul li
 {
     float:right;
 }
+.alignLeft
+{
+    float:left;
+}
 .locations
 {
- padding:10px;
+ padding:5px;
  overflow:scroll;   
  font-size:12px;
- border:1px solid #902b21;
- background: #ffeeee;
- margin-bottom:10px;
+ border:1px solid #bbd1e8;
+ background: #ffffff;
+ margin-bottom:0px;
 }
 .connection
 {
@@ -111,7 +123,7 @@ ul li
  text-align:right;
 }
 
-.smallfont
+.smallFont
 {
     font-size:8px;
     color:Black;
@@ -127,14 +139,65 @@ display:inline;
     font-weight:bold;
     font-size:12px;
     margin:0px;
-    padding-bottom:20%;
 }
 .logo
 {
     padding-top:4%;
     padding-bottom:15%;
 }
+.logoSmall
+{
+    padding-top:20px;
+    padding-left:5%;
+}
+.textAlignRight
+{
+    text-align:right;
+    padding-right:2.5%;
+}
 
+.cleareBoth
+{
+    clear:both;
+    border:none;
+}
 
-
-
+.inventoryLabel
+{
+   padding-left:8%;
+   padding-bottom:0px;
+   margin-bottom:0px;
+}
+.middleAlign
+{
+    vertical-align:middle;
+}
+.locationTitle
+{
+    padding-left:3%;
+    font-size:10px;
+    color:#0c406f;
+    font-weight:bold;
+}
+.registrations
+{
+    font-size:10px;
+    padding-left:3%;
+}
+.locationsFolder
+{
+    float:right;
+    padding-top:40px;
+    padding-right:5%;
+}
+.headerBG
+{
+    
+    width:100%;
+    margin:0px;
+    padding:0px;
+    background-image:url('images/header_bg.png');
+    background-repeat:repeat-x;   
+    background-position:bottom;
+    height:70px;
+}
