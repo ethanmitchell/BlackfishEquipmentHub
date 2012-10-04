@@ -214,14 +214,7 @@ display:inline;
     color:#0c406f;
     padding-left:12%;
 }
-.itemName
-{
-    font-weight:bold;
-    font-size:9px;
-    color:#0c406f;
-    white-space:nowrap;
-}
-.itemQuantity, .itemNumber
+.itemQuantity, .itemNumber, .itemName
 {
     font-weight:bold;
     font-size:9px;
