@@ -104,7 +104,6 @@ ul li
 {
  padding:5px;
  overflow:scroll;   
- font-size:12px;
  border:1px solid #bbd1e8;
  background: #ffffff;
  margin-bottom:0px;
@@ -157,7 +156,7 @@ display:inline;
     padding-right:2.5%;
 }
 
-.cleareBoth
+.clearBoth
 {
     clear:both;
     border:none;
@@ -227,8 +226,6 @@ display:inline;
 }
 .itemName
 {
-    white-space:nowrap;
-    overflow:scroll;
-    width:60%;
+width:60%;
     
 }
