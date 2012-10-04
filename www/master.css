@@ -102,6 +102,7 @@ ul li
 }
 .locations, .inventory
 {
+ font-size:9px;
  padding:5px;
  overflow:scroll;   
  border:1px solid #bbd1e8;
