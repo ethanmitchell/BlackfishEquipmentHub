@@ -234,8 +234,12 @@ display:inline;
 width:60%;
     
 }
-.itemName a, .itemNumber a
+.itemName a
 {
     font-size:9px;
     color:#0c406f;
+}
+.itemName p
+{
+    font-size:9px;
 }
