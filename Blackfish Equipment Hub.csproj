@@ -115,6 +115,7 @@
     </Content>
     <Content Include="www\inventory.html" />
     <Resource Include="www\inventoryList.png" />
+    <Content Include="www\inventoryItem.html" />
     <Content Include="www\javascript\jquery.js" />
     <Content Include="www\javascript\jquery.tabify.js" />
     <Content Include="www\javascript\jquery.tabify.source.js" />
