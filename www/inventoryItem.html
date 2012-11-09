@@ -50,13 +50,18 @@
 
 
           function fillComments() {
-              $i = 1;
-              while ($i < 4) {
-                  $('.inventoryComments').append('<b>Comment Title: </b>');
-                  $('.inventoryComments').append('Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis hendrerit turpis nec tortor scelerisque molestie.<br />');
-                  $('.inventoryComments').append('- Commentor Name<hr />');
-                  $i++;
-              }
+              //$i = 1;
+              //while ($i < 4) {
+              //    $('.inventoryComments').append('<b>Comment Title: </b>');
+              //    $('.inventoryComments').append('Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis hendrerit turpis nec tortor scelerisque molestie.<br />');
+              //    $('.inventoryComments').append('- Commentor Name<hr />');
+              //    $i++;
+              //}
+              var localTitle = window.localStorage.getItem("title");
+              var localMessage = window.localStorage.getItem("message");
+              $('.inventoryComments').append('<b>' + localTitle + ': </b>');
+              $('.inventoryComments').append(localMessage + '<br />');
+              $('.inventoryComments').append('- Commentor Name<hr />');
 
           }
 
