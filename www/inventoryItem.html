@@ -61,10 +61,13 @@
           }
 
           function postComment() {
-              var commentTitle = window.prompt('Please enter a title:', 'Comment Title');
-              var commentBody = window.prompt('Please enter a message:', 'Comment Message');
-              $('.inventoryComments').append('<b>'+ commentTitle +': </b>');
-              $('.inventoryComments').append(commentBody +'<br />');
+              var commentTitle = window.prompt('Please enter a title:', '');
+              var commentBody = window.prompt('Please enter a message:', '');
+              var localTitle = window.localStorage.setItem("title", commentTitle);
+              var localMessage = window.localStorage.setItem("message", commentMessage);
+
+              $('.inventoryComments').append('<b>' + localTitle + ': </b>');
+              $('.inventoryComments').append(localMessage + '<br />');
               $('.inventoryComments').append('- Commentor Name<hr />');
 
           }
