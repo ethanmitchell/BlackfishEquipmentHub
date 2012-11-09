@@ -63,11 +63,14 @@
           function postComment() {
               var commentTitle = window.prompt('Please enter a title:', '');
               var commentBody = window.prompt('Please enter a message:', '');
-              var localTitle = window.localStorage.setItem("title", commentTitle);
-              var localMessage = window.localStorage.setItem("message", commentMessage);
+              window.localStorage.setItem("title", commentTitle);
+              window.localStorage.setItem("message", commentMessage);
+              alert('got here');
+              var localTitle = window.localStoarge.getItem("title");
+              var localMessage = window.localStoarge.getItem("message");
 
               $('.inventoryComments').append('<b>' + localTitle + ': </b>');
-              $('.inventoryComments').append(localMessage + '<br />');
+              $('.inventoryComments').append(localMessages + '<br />');
               $('.inventoryComments').append('- Commentor Name<hr />');
 
           }
