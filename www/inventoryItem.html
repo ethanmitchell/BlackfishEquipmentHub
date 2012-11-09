@@ -42,9 +42,32 @@
           function onDeviceReady() {
           }
           $(document).ready(function () {
-              var myHeight = window.innerHeight / 2;
+              var myHeight = window.innerHeight / 4;
               $('.inventory').css('height', myHeight + 'px');
+              $('.inventoryComments').css('height', myHeight + 'px');
+              fillComments();
           });
+
+
+          function fillComments() {
+              $i = 1;
+              while ($i < 4) {
+                  $('.inventoryComments').append('<b>Comment Title: </b>');
+                  $('.inventoryComments').append('Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis hendrerit turpis nec tortor scelerisque molestie.<br />');
+                  $('.inventoryComments').append('- Commentor Name<hr />');
+                  $i++;
+              }
+
+          }
+
+          function postComment() {
+              var commentTitle = window.prompt('Please enter a title:', 'Comment Title');
+              var commentBody = window.prompt('Please enter a message:', 'Comment Message');
+              $('.inventoryComments').append('<b>'+ commentTitle +': </b>');
+              $('.inventoryComments').append(commentBody +'<br />');
+              $('.inventoryComments').append('- Commentor Name<hr />');
+
+          }
       </script>
 </head>
   <body>
@@ -65,7 +88,10 @@
     <p><b>Descriptions:</b> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis hendrerit turpis nec tortor scelerisque molestie. Proin porttitor, elit faucibus pulvinar pulvinar, sem sapien aliquet orci, ac elementum mi ante nec mi. Donec consectetur ante non lacus pellentesque egestas.</p>
     <p><b>Price Per Unit:</b>$95.11</p>
     <p><b>Images</b></p>
-    <p class="inventory"></p>
+    <div class="inventory"></div>
+    <p><b>Comments</b></p>
+    <div class="inventoryComments"></div>
+    <button onclick="postComment()">Add Comment</button>
     <p><a href="inventory.html">Back</a></p>
     
     </div>

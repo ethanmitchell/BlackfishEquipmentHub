@@ -105,7 +105,7 @@ ul li
 {
     float:left;
 }
-.locations, .inventory
+.locations, .inventory, .inventoryComments
 {
  font-size:9px;
  padding:5px;
